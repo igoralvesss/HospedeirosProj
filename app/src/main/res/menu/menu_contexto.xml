@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="História" android:onClick="historia"/>
+    <item android:title="Transmissão" android:onClick="transmissao"/>
+    <item android:title="Prevenção" android:onClick="prevencao"/>
+</menu>

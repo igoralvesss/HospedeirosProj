@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ECF8EC"
+    tools:context="com.hospedparasita.projetoparasitologia.game.QuizResults">
+
+    <ImageView
+        android:id="@+id/congratulationsIcon"
+        android:layout_width="260dp"
+        android:layout_height="260dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="10dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/logo2" />
+
+
+    <TextView
+        android:id="@+id/textoParabens"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/congratulationsIcon"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="0dp"
+        android:gravity="center"
+        android:text="Parabéns você completou o QUIZ!"
+        android:textColor="#000000"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/textinho"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textoParabens"
+        android:layout_marginTop="30dp"
+        android:text="Respostas corretas:"
+        android:textAlignment="center"
+        android:textColor="#141415"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/correctAnswers"
+                android:layout_below="@id/textinho"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"
+                android:text="Respostas corretas : 0"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textColor="#002BC8"/>
+
+    <TextView
+        android:id="@+id/textinho2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/correctAnswers"
+        android:layout_marginTop="20dp"
+        android:text="Respostas incorretas:"
+        android:textAlignment="center"
+        android:textColor="#141415"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/incorrectAnswers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textinho2"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="10dp"
+        android:textAlignment="center"
+        android:text="Respostas incorretas : 0"
+        android:textSize="20sp"
+        android:textColor="#DD2C00"
+        android:textStyle="bold" />
+
+
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/startNewQuizBtn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Inicie um novo QUIZ"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/round_back_blue20"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20dp"/>
+
+
+</RelativeLayout>

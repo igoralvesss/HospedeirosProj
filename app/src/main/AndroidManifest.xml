@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hospedparasita.projetoparasitologia">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/fullScreen"
+        android:screenOrientation="portrait"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name="com.hospedparasita.projetoparasitologia.ListaBrasil"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name="com.hospedparasita.projetoparasitologia.tabs.TabInfoActivity"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name="com.hospedparasita.projetoparasitologia.ListaCentro"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name="com.hospedparasita.projetoparasitologia.ListaSul"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name="com.hospedparasita.projetoparasitologia.ListaSudeste"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name="com.hospedparasita.projetoparasitologia.ListaNordeste"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name="com.hospedparasita.projetoparasitologia.game.QuizResults"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name="com.hospedparasita.projetoparasitologia.game.QuizActivity"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name="com.hospedparasita.projetoparasitologia.game.PrincipalGameActivity"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name="com.hospedparasita.projetoparasitologia.ListarDoencaActivity"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name="com.hospedparasita.projetoparasitologia.Splash"
+            android:screenOrientation="portrait"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.hospedparasita.projetoparasitologia.MainActivity2"
+            android:exported="false"
+            android:label="@string/title_activity_main2"
+            android:screenOrientation="portrait"
+            android:theme="@style/fullScreen" />
+        <activity
+            android:name="com.hospedparasita.projetoparasitologia.MainActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>
